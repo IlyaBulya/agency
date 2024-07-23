@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcelona Bureaucracy Assistance Agency</title>
+    <title>Barcelona Small Business Bureaucracy Assistance</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Barcelona Bureaucracy Assistance Agency</h1>
+            <h1>Barcelona Small Business Bureaucracy Assistance</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#consultation">Consultation</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -23,9 +25,9 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <h2>We Help You Navigate Bureaucracy in Barcelona</h2>
-            <p>Your one-stop solution for all bureaucratic needs.</p>
-            <a href="#services" class="btn">Learn More</a>
+            <h2>Helping Small Businesses Navigate Bureaucracy</h2>
+            <p>Your partner in overcoming bureaucratic challenges in Barcelona.</p>
+            <a href="#services" class="btn">Our Services</a>
         </div>
     </section>
 
@@ -34,37 +36,78 @@
             <h2>Our Services</h2>
             <div class="services">
                 <div class="service">
-                    <h3>Documentation Assistance</h3>
-                    <p>Help with filling out and submitting forms.</p>
+                    <h3>Initial Consultation</h3>
+                    <p>Identify and address bureaucratic issues with expert guidance.</p>
                 </div>
                 <div class="service">
-                    <h3>Appointment Scheduling</h3>
-                    <p>We schedule your appointments with government offices.</p>
+                    <h3>Document Preparation</h3>
+                    <p>Assistance with preparing and submitting necessary documents.</p>
                 </div>
                 <div class="service">
-                    <h3>Translation Services</h3>
-                    <p>Professional translation of documents.</p>
+                    <h3>Ongoing Support</h3>
+                    <p>Continued support for long-term bureaucratic management.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="consultation">
+        <div class="container">
+            <h2>Book a Consultation</h2>
+            <form id="consultationForm">
+                <label for="businessName">Business Name</label>
+                <input type="text" id="businessName" name="businessName" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="issue">Describe Your Issue</label>
+                <textarea id="issue" name="issue" required></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>We are dedicated to helping businesses to Barcelona navigate the complexities of bureaucratic processes. Our team of experts is here to provide personalized assistance and ensure you get through the paperwork efficiently.</p>
+            <p>We are dedicated to helping residents and newcomers to Barcelona navigate the complexities of bureaucratic processes. Our team of experts is here to provide personalized assistance and ensure you get through the paperwork efficiently.</p>
+            <div class="team">
+                <div class="team-member">
+                    <img src="arsen.jpeg" alt="Team Member">
+                    <h3>Arsen</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="ilia.jpg" alt="Team Member">
+                    <h3>Ilia</h3>
+                    <p>Founder & CFO</p>
+                </div>
+                <div class="team-member">
+                    <img src="nikita.jpg" alt="Team Member">
+                    <h3>Nikita</h3>
+                    <p>Founder & CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="leo.jpg" alt="Team Member">
+                    <h3>Leo</h3>
+                    <p>Founder & CMO</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form>
+            <form id="contactForm">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="emailContact">Email</label>
+                <input type="email" id="emailContact" name="emailContact" required>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
@@ -75,8 +118,8 @@
     </section>
 
     <footer>
-        <div class="container2">
-            <p>&copy; 2024 Barcelona Bureaucracy Assistance Agency. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Barcelona Small Business Bureaucracy Assistance. All rights reserved.</p>
         </div>
     </footer>
 </body>

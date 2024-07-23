@@ -7,13 +7,13 @@
 
 body {
     line-height: 1.6;
+    background: #f4f4f4;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-    color: black;
 }
 
 header {
@@ -24,7 +24,6 @@ header {
 
 header h1 {
     float: left;
-    color: #fff;
 }
 
 header nav {
@@ -76,6 +75,8 @@ header nav ul li a {
 
 section {
     padding: 2rem 0;
+    background: #fff;
+    margin-bottom: 1rem;
 }
 
 section h2 {
@@ -100,6 +101,7 @@ section h2 {
 form {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 form label {
@@ -122,13 +124,35 @@ form button {
     margin-top: 10px;
 }
 
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-}
-.container2{
-    color: #fff;
 }
